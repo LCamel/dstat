@@ -37,7 +37,7 @@ class dstat_plugin(dstat):
             if mysql_host:
                 args['host'] = mysql_host
             if mysql_port:
-                args['port'] = mysql_port
+                args['port'] = int(mysql_port)
             if mysql_socket:
                 args['unix_socket'] = mysql_socket
 
